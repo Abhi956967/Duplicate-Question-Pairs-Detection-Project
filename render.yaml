@@ -1,9 +1,12 @@
+# Exported from Render on 2025-07-29T16:49:09Z
 services:
-  - type: web
-    name: abhishek-nlp-app
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: streamlit run app.py
-    envVars:
-      - key: ENV
-        value: production
+- type: web
+  name: Abhishek
+  runtime: python
+  repo: https://github.com/Abhi956967/Duplicate-Question-Pairs-Detection-Project
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn app:app
+  autoDeployTrigger: commit
+version: "1"
