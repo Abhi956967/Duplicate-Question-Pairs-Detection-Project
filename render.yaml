@@ -1,7 +1,7 @@
 # Exported from Render on 2025-07-29T16:49:09Z
 services:
 - type: web
-  name: Abhishek
+  name: Abhishek-Maurya
   runtime: python
   repo: https://github.com/Abhi956967/Duplicate-Question-Pairs-Detection-Project
   plan: free
