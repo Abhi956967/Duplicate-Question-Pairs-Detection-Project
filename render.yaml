@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: abhishek-nlp-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py
+    envVars:
+      - key: ENV
+        value: production
